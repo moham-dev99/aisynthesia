@@ -1,22 +1,11 @@
-# Trillo
+# Synthesia clone
 
 <br />
-<p align="center">
-    <img src="trillo.png" width="100%" height="100%">
-  </a>
 
-  <p align="center">
-    A Hotel website project using HTML and SCSS.
-    <br />
-    <br />
-    <br />
-    <a href="https://emerald-sheraton.netlify.app">View Demo</a>
-  </p>
-</p>
 
 ## About The Project
 
-This is a website built with css flexbox rule and also mobile responsive. It is to showcase my proficiency in building website using css flexbox👍.
+This is a website clone built with Html, scss and javascript👍.
 
 ## Technologies Used
 
@@ -24,6 +13,7 @@ This is a website built with css flexbox rule and also mobile responsive. It is 
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [SCSS](https://sass-lang.com/)
+- [javascript](https://www.learn-js.org/)
 - [NPM](https://www.npmjs.com/)
 
 ## Getting Started
@@ -50,7 +40,7 @@ Start with the latest version of NPM to avoid any errors:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/emerald1996/trillo
+   git clone https://github.com/emerald1996/aisynthesia
    ```
 2. Install NPM packages
    ```sh
