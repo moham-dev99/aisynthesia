@@ -1,0 +1,38 @@
+.btn {
+
+    &,
+    &:link,
+    &:visited {
+        background: var(--primary-blue);
+        padding: 1.2rem 3rem;
+        border-radius: 1.0rem;
+        color: var(--base-white);
+        position: relative;
+        display: block;
+        text-decoration: none;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+    }
+
+    &-arrow {
+        transform: translateX(0px);
+        position: absolute;
+        margin-left: .3rem;
+    }
+
+    &:hover {
+        background: var(--color-primary-dark);
+    }
+
+    &:hover .btn-arrow {
+        transform: translateX(1px);
+        animation: slideArrow .6s ease-in-out;
+        visibility: visible;
+    }
+
+}
+
+.header__main-btn {
+    margin-top: 4rem;
+}

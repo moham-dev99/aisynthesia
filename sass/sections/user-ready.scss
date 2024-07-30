@@ -1,0 +1,104 @@
+.readiness__container {
+    background-image: url(/assets/background-2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0;
+
+    &-display {
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+        padding-left: 2rem;
+
+
+        @include respond (tab-portrait) {
+            & {
+                flex-direction: column;
+            }
+        }
+
+       
+
+        .readiness__frame {
+            position: relative;
+            // object-fit: contain;
+            width: 100%;
+            .image__frame{
+                overflow: hidden;
+                // width: 90%;
+                position: relative;
+                
+                img{
+                    height: 100%;
+                    width: 170%;
+                    object-fit: cover;
+                }
+            }
+
+            video {
+                width: 80%;
+                position: absolute;
+                top: 35%;
+                left: 60%;
+                transform: translate(-50%, -50%);
+                // border-radius: 1.4rem 1.4rem 1.4rem;
+                border-top-left-radius: 1.4rem;
+                border-bottom-left-radius: 1.4rem;
+            }
+        }
+
+    }
+
+    &-content {
+        font-size: 1.5rem;
+
+        @include respond(phone) {
+            .readiness__header {
+                font-size: 3rem !important;
+            }
+        }
+
+       
+
+        & > *:not(:last-child) {
+            padding-bottom: 3rem;
+        }
+    }
+
+    &-links {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        gap: 1rem;
+
+        @include respond(phone) {
+            & {
+                order: 1;
+                display: flex;
+            }
+
+            a {
+                flex: 1;
+                text-align: center;
+            }
+
+        }
+
+
+        .readiness__container-btn {
+            background: var(--base-white);
+            // padding: 1.3rem 4rem;
+            // margin-top: 5rem;
+            border-radius: 1.0rem;
+            color: var(--secondary-blue);
+            position: relative;
+            display: block;
+            // font-size: 1.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}

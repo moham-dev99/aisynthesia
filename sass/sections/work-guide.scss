@@ -1,0 +1,36 @@
+.work__guide-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto;
+    background-image: url(/assets/background-4.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 4rem 2rem;
+    border-bottom-right-radius: 8rem;
+
+    &-Heading{
+        color: var(--base-white);
+    }
+
+    &-MainHeading{
+        color: var(--base-white);
+        font-size: 6rem;
+        font-family: var(--font-family-3);
+        font-weight: 300;
+
+        @include respond (tab-portrait) {
+            text-align: center;
+            font-size: 3rem !important;
+        }
+    }
+}
+
+// Video tab styling is in the tabsComponent file in the components folder 👍
+
+
+
+
+

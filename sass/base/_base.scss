@@ -1,0 +1,94 @@
+:root{
+    --font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    --font-family-2: "Poppins", sans-serif;
+    --font-family-3: "Roboto Condensed", sans-serif;
+
+    --base-white: #ffffff;
+    --header-alice-blue: rgba(130, 191, 247, 0.132);
+    --primary-blue: rgba(61, 61, 249, 0.82);
+    --secondary-blue: rgb(13, 13, 50);
+    --tertiary-blue: #8098f9;;
+
+    --color-primary: #2c43b8;
+    --color-primary-light: #8098f9;
+    --color-primary-dark: #333773;
+
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #969bb5;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+
+    --color-icon-color-2: rgb(7, 236, 236);
+    --color-icon-color-3: rgba(44, 96, 44, 0.598);
+    --color-icon-color-4: rgb(254, 172, 186);
+
+    --shadow-dark: 0 2rem 6rem rgba(6, 6, 6, 0.3);
+    --shadow-light: 0 2rem 5rem rgba(180, 173, 173, 0.06);
+
+    --line: 1px solid var(--color-grey-light-2);
+
+    --gradient-primary: linear-gradient(to top left,#05248a, #0a0a0a);
+}
+
+
+
+// $bp-largest: 75em; // 1200px
+// $bp-large: 68.75em; // 1100px
+// $bp-medium: 56.25em; // 900px
+// $bp-small: 37.5em; // 600px
+// $bp-smallest: 31.25em; // 500px
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+    @include respond (phone) {
+        font-size: 50%;
+    }
+    @include respond (tab-portrait) {
+        font-size: 60%;
+    }
+    @include respond (tab-landscape-fit) {
+        font-size: 65%;
+    }
+    @include respond (tab-landscape) {
+        font-size: 70%;
+    }
+    @include respond (big-desktop) {
+        font-size: 80%;
+    }
+
+    
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    // font-weight: 400;
+    // line-height: 1.6;
+    // background: var(--color-grey-light-1);
+    // color: var(--color-grey-dark-2);
+    // background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+    // background-size: cover;
+    // background-repeat: no-repeat;
+
+    // min-height: 100vh;
+
+
+}

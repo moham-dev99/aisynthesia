@@ -1,0 +1,51 @@
+.usecase__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 4rem 2rem;
+
+    
+    
+
+    &-heading{
+        margin-top: 6rem;
+    }
+    &-headingText{
+        text-align: center;
+        font-size: 5rem !important;
+        width: 65%;
+
+        @include respond(tab-portrait) {
+            width: 65%;
+        }
+        @include respond(phone) {
+            width: 100% !important;
+            font-size: 3rem !important;
+            text-align: center;
+        }
+        
+    }
+
+
+}
+
+
+@include respond(tab-portrait) {
+    .usecase__container {
+        overflow: hidden;
+
+        &-headingText {
+            text-align: center;
+            font-size: 3rem;
+            width: 65%;
+    
+        }
+
+    }
+   
+    
+}
+
+// check tabcomponent for the video styling... operations-tab

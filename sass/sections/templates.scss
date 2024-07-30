@@ -1,0 +1,111 @@
+.templates__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem;
+    background-image: url(/assets/background--5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &-heading {
+        margin-top: 6rem;
+        color: var(--base-white);
+    }
+
+    &-headingText {
+        text-align: center;
+        // font-size: 4rem;
+        // width: 55%;
+        color: var(--base-white);
+
+        @include respond (phone) {
+            font-size: 3rem !important;
+        }
+    }
+
+    &-btn {
+        width: fit-content;
+        font-size: 1.6rem;
+        background: var(--base-white) !important;
+        box-shadow: 0 0 5px var(--color-grey-dark-3);
+        color: var(--secondary-blue) !important;
+        margin-top: 2rem;
+
+        &:hover {
+            background: var(--color-grey-light-3) !important;
+        }
+    }
+
+    &-videos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include respond(tab-portrait) {
+        .templates__container-videos {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @include respond(phone) {
+        .templates__container-videos {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    & .video__template {
+        position: relative;
+        width: 100%;
+        margin-top: 3rem;
+        padding: 1.2rem;
+
+        p{
+            color: var(--base-white);
+            font-size: 1.4rem;
+        }
+      
+
+        video {
+            width: 100%;
+            border-radius: 1.2rem;
+        }
+
+        &-button {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--color-grey-light-4);
+            border-radius: 999rem;
+            padding: .5rem;
+
+            .bx {
+                color: var(--base-white);
+                font-size: 2rem;
+                background: var(--primary-blue);
+                border-radius: 5rem;
+                padding: .5rem;
+                box-shadow: 0 0 10px var(--color-grey-light-4);
+                cursor: pointer;
+            }
+
+            & span {
+                display: none;
+                text-transform: capitalize;
+                cursor: pointer;
+
+            }
+
+            &:hover span {
+                display: block;
+                // flex: 1;
+                padding: 0 1.9rem;
+                font-size: 1.4rem;
+                transition: background 3s;
+            }
+        }
+    }
+}

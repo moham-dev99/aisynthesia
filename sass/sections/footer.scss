@@ -1,0 +1,115 @@
+.footer__container {
+    padding: 6rem 2rem;
+    background: var(--secondary-blue);
+    color: var(--base-white);
+    margin-top: -5rem;
+
+    
+
+    &-display {
+        border-bottom: 1px solid var(--base-white);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 4rem;
+        // padding-right: 6rem;
+        // padding-top: 4rem;
+        // padding-bottom: 4rem;
+        padding: 4rem 6rem;
+
+        .footer__nav-logo {
+            width: 20rem;
+        }
+
+        .footer__nav-image {
+            width: 85%;
+            padding-bottom: 2rem;
+        }
+
+        .approved_stamp {
+            width: 100%;
+            flex: 1;
+
+            p{
+                font-size: 1.1rem;
+    
+                a, :link, :visited {
+                    text-decoration: none;
+                    color: var(--tertiary-blue);
+                }
+    
+                a:hover {
+                    color: var(--tertiary-blue);
+                    text-decoration: underline;
+                }
+    
+            }
+        }
+
+
+        .footer_stamped_images {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 5rem;
+            border-bottom: 1px solid var(--color-grey-light-2);
+            border-top: 1px solid var(--color-grey-light-2);
+            padding: 2rem 0;
+            margin: 3rem 0;
+
+            img{
+                width: 40%;
+                object-fit: contain;
+            }
+        }
+    }
+    & .footer_links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        // flex: .6;
+
+        a , :link,:visited{
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: var(--base-white);
+            padding-top: 2rem;
+            font-size: 1.1rem;
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: color .2s ease;
+            
+        }
+        a:hover {
+            color: var(--tertiary-blue);
+        }
+
+        h4 {
+            font-size: 1.8rem;
+            // margin: 2rem 0;
+            color: var(--tertiary-blue);
+        }
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3rem 0;
+
+        .bx {
+            font-size: 2rem;
+            padding: 0 1.2rem;
+            cursor: pointer;
+        }
+    }
+
+}
+
+
+
+
+@include respond(phone) {
+    
+}

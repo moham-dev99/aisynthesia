@@ -1,0 +1,32 @@
+@import "abstracts/_mixins";
+
+// @import "./layout/layout.scss";
+
+@import "./base/base";
+@import "./typography/typography.scss";
+
+@import "./headers/header-navigation.scss";
+@import "./headers/hero-section";
+
+@import "./animations/animation";
+
+@import "./components/button.scss";
+@import "./components/video.scss";
+@import "./components/tab-component.scss";
+@import "./components/card.scss";
+@import "./components/video-control-button.scss";
+
+
+@import "./sections/use-case.scss";
+@import "./sections/work-guide.scss";
+@import "./sections/ai-option-section.scss";
+@import "./sections/ai-avatars-section.scss";
+@import "./sections/integrations.scss";
+@import "./sections/quote.scss";
+@import "./sections/templates.scss";
+@import "./sections/FAQ.scss";
+@import "./sections/user-ready.scss";
+@import "./sections/footer.scss";
+
+
+

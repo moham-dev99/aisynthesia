@@ -1,0 +1,124 @@
+.faq__container {
+    padding: 6rem 2rem;
+
+    &-display {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    @include respond(tab-portrait) {
+        &-display {
+            // display: grid;
+            // grid-template-columns: repeat(1, 1fr);
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &-headings {
+        .faq__container-header {
+            display: block;
+            margin: auto;
+            margin-bottom: 2rem;
+        }
+        .faq__container-headerMain {
+            font-size: 3rem !important;
+            text-align: center;
+        }
+
+    }
+
+}
+
+.faq-container {
+    // max-width: 600px;
+    margin: 0 auto;
+    flex: .8;
+
+    & > *:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}
+
+@include respond(tab-portrait) {
+    .faq-container {
+        flex: 1;
+        width: 95%;
+    }
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    background: var(--header-alice-blue);
+    border-radius: 1.6rem;
+    border: 1px solid var(--header-alice-blue);
+    // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: var(--secondary-blue);
+
+    &:hover {
+        background: var(--header-alice-blue);
+    }
+    & .faq-toggle {
+        color: var(--primary-blue);
+    }
+}
+
+.faq-question {
+    width: 100%;
+    padding: 1.6rem;
+    // background: #007BFF;
+    // color: white;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+.faq-toggle {
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    color: var(--secondary-blue);
+    border: none;
+    font-size: 1.6rem;
+    font-weight: normal;
+
+    li{
+        // display: flex;
+        // display: block;
+
+        &::marker {
+            color: var(--primary-blue) !important;
+        }
+    }
+
+
+    a,
+    :link,
+    :visited {
+        color: var(--primary-blue);
+        text-decoration: none;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    a:hover {
+        color: var(--primary-blue);
+        text-decoration: underline;
+    }
+}
+
+.faq-answer p {
+    margin: 0;
+}

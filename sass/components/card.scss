@@ -1,0 +1,111 @@
+.card__option-container {
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--color-grey-light-3);
+    
+
+    &-MainHeading {
+        font-size: 4rem;
+        text-align: center;
+        width: 70%;
+
+        @include respond (tab-portrait) {
+            font-size: 4rem !important;
+        }
+        @include respond (phone) {
+            font-size: 2rem !important;
+
+        }
+    }
+
+    &-display {
+        // display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 3rem;
+        justify-content: center;
+        padding: 4rem 2rem;
+    }
+
+    @include respond(tab-portrait) {
+        .card__option-container-display {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+.card__option {
+    background: var(--header-alice-blue);
+    align-self: stretch;
+    padding: 3rem;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+
+    
+
+    &:hover {
+        transform: scale(1);
+        box-shadow: 0 0 5px var(--color-grey-light-4);
+        cursor: pointer;
+
+        & .card__option-btn{
+            color: var(--secondary-blue) !important;
+        }
+
+        .btn-arrow {
+            transform: translateX(1px);
+            animation: slideArrow .6s ease-in-out;
+            visibility: visible;
+        }
+        .card__option-discount {
+            opacity: .8;
+        }
+    }
+
+    &-btn{
+        background: transparent !important;
+        color: var(--primary-blue) !important;
+        display: block;
+        font-size: 1.3rem;
+
+        &:hover {
+            text-decoration: underline;
+            color: var(--secondary-blue) !important;
+        }
+    }
+
+    &-discount {
+        font-size: 9.5rem;
+        color: var(--primary-blue);
+        padding-top: 3rem;
+        display: flex;
+        align-items: center;
+
+        & span{
+            font-size: 5rem;
+        }
+    }
+    & label{
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 2rem;
+        color: var(--color-grey-dark-1);
+    }
+    & p {
+        font-size: 1.6rem;
+        text-align: center;
+        color: var(--color-grey-dark-1);
+        padding-bottom: 4rem;
+    }
+}

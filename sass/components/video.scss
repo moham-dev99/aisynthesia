@@ -1,0 +1,17 @@
+.header__main-video {
+    // width: 200%;
+    background: --gradient-primary;
+    // border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &-hero {
+        width: 95%;
+        display: block;
+        margin: auto;
+        border-radius: 30px;
+    }
+}

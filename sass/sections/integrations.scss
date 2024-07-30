@@ -1,0 +1,70 @@
+.integrations__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 2rem;
+
+    &-display {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+
+    &-heading {
+        @include respond(phone) {
+            & {
+                display: block;
+                margin: auto;
+                padding-bottom: 2rem;
+            }
+        }
+    }
+
+    @include respond(tab-portrait) {
+        .integrations__container-display {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 3rem;
+        }
+    }
+    &-mainHeader {
+        font-size: 4rem;
+        // line-height: 5rem;
+        padding-bottom: 2rem;
+        width: 70%;
+        font-weight: 500;
+
+        @include respond(phone) {
+            & {
+                text-align: center;
+                font-size: 3rem !important ;
+                width: 100%;
+                font-weight: bold;
+            }
+        }
+    }
+    &-paragraph {
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+
+        @include respond(phone) {
+            & {
+                text-align: center;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.integration__images {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    img {
+        width: 8rem !important;
+        margin: 3rem;
+        object-fit: contain;
+    }
+}
+
