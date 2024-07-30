@@ -12,7 +12,7 @@
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
     "build:css": "npm-run-all compile:sass concat:css prefix:css"
   },
-  "author": "Emma Emerald",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.19",
