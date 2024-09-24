@@ -40,7 +40,7 @@ Start with the latest version of NPM to avoid any errors:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Liljoshdev/aisynthesia
+   git clone https://github.com/moham-dev99/aisynthesia
    ```
 2. Install NPM packages
    ```sh
